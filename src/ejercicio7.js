@@ -1,15 +1,15 @@
-let precioUnitario = 25;
+let precio_Unitario = 25;
 let cantidad = 60;
-let precioFinal;
+let precio_Final;
 
-let totalSinDescuento = precioUnitario * cantidad;
+let total_Sin_Descuento = precio_Unitario * cantidad;
 
 if (cantidad < 10) {
-  precioFinal = totalSinDescuento;
+  precio_Final = total_Sin_Descuento;
 } else if (cantidad >= 10 && cantidad < 50) {
-  precioFinal = totalSinDescuento * 0.9; 
+  precio_Final = total_Sin_Descuento * 0.9; 
 } else if (cantidad >= 50) {
-  precioFinal = totalSinDescuento * 0.8; 
+  precio_Final = total_Sin_Descuento * 0.8; 
 }
 
-console.log(precioFinal.toFixed(2));
+console.log(precio_Final.toFixed(2));
